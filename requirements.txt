@@ -1,0 +1,4 @@
+baycomp
+numpy
+seaborn
+matplotlib
