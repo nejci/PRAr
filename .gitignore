@@ -1,3 +1,10 @@
+# VS Code configuration folder
+.vscode/
+
+# Matlab auto-saved files
+*.asv
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
