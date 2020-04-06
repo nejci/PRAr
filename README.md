@@ -33,6 +33,6 @@ It provides functions for:
 - cluster internal and external validation,
 - visualization of clustering results.
 
-Pepelka includes a lot of artificial and real datasets. 
+Pepelka includes a lot of artificial and real-world datasets. 
 
 A pre-release of Pepelka is included here.
