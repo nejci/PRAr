@@ -10,7 +10,7 @@ from data import *
 from multiprocessing import Pool
 
 __author__ = "Nejc Ilc"
-__copyright__ = "Copyright 2019, Nejc Ilc"
+__copyright__ = "Copyright 2020, Nejc Ilc"
 __license__ = "GPL"
 __version__ = "0.9"
 __email__ = "nejc.ilc@gmail.com"

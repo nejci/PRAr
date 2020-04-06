@@ -5,14 +5,14 @@
 % Setup script
 % -------------------------------------------------------------------------
 % Writen by Nejc Ilc (nejc.ilc@fri.uni-lj.si)
-% 2019-09-19
+% 2020-04-04
 % =========================================================================
 
 sep = repmat('-',1,72);
 fprintf('%s\nPartition relevance analysis with reduction step\nSETUP\n%s\n\n',sep,sep);
 
 % Run setup script that initializes toolbox for cluster ensembles - Pepelka
-fprintf('Configuring Pepelka toolbox for cluster ensambles.\nYou will be prompted to take some decisions during the setup.\n');
+fprintf('Configuring Pepelka toolbox for cluster ensembles.\nYou will be prompted to take some decisions during the setup.\n');
 oldDir = chdir('Pepelka');
 setup();
 chdir(oldDir);
