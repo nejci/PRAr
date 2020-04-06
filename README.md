@@ -2,7 +2,7 @@
 _Partition Relevance Analysis with the reduction step_
 
 This repository contains supporting material for the paper 
-*Weighted Cluster Ensemble Based on Partition Relevance Analysis With Reduction Step*, Nejc Ilc (to be published).
+*Weighted Cluster Ensemble Based on Partition Relevance Analysis With Reduction Step* (work in progress).
 
 ## Requirements
 
