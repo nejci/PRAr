@@ -2,10 +2,10 @@
 % Weighted Cluster Ensemble Based on 
 % Partition Relevance Analysis With Reduction Step
 % -------------------------------------------------------------------------
-% Illustrative example (see Section III.D, Fig. 1, Tables I and II)
+% Illustrative example (see Section III.D, Fig. 2, Tables 1 and 2)
 % -------------------------------------------------------------------------
 % Writen by Nejc Ilc (nejc.ilc@fri.uni-lj.si)
-% 2019-09-19
+% 2020-05-05
 % =========================================================================
 
 %% Demo configuration
