@@ -32,7 +32,7 @@ if argc > 3:
 
 # print('Bayesian analysis (makeTablesOnly: {}, numWorkers: {})'.format(makeTablesOnly, numWorkers))
 
-scoresFolder = '4-presentation/export-baycomp'
+scoresFolder = '4-presentation/baycomp-import'
 outputFolder = '4-presentation/baycomp-results'
 outputFolderFigsPairs = 'figs-pairs'
 saveFigsPairs = 0
@@ -201,18 +201,18 @@ def generateTables():
 
             fileTable = open(outputFolder+'/table-'+eCVI+'-'+protocol+'.tex', 'w')
             fileTable.write('\\begin{table}\n')
-            fileTable.write('\t\\begin{center}\n')
-            fileTable.write('\t\t\\caption{Probabilities that proposed methods with PRAr are better than others considering the \\emph{'+protocol+'} protocol.}\n')
+            fileTable.write('\t\\centering\n')
+            fileTable.write('\t\t\\caption{Probabilities that proposed methods with PRAr are better than others considering the \\emph{'+protocol+'} protocol. Probabilities larger than 0.5 (an arbitrary threshold) are given in bold for convenience.}\n')
             fileTable.write('\t\t\\label{tab:bayescomp:'+protocol+'}\n')
-            fileTable.write('\t\t\\begin{tabular*}{1.0\\linewidth}{@{\\extracolsep{\\fill}} l '+'|c c '*nPivots+'}\n')
-            fileTable.write('\t\t\t\\hline\n')
+            fileTable.write('\t\t\\begin{tabular*}{1.0\\linewidth}{@{\\extracolsep{\\fill}} l '+'c c '*nPivots+'}\n')
+            fileTable.write('\t\t\t\\toprule\n')
 
             # Make header of Latex table
-            header1 = '\t\t\tcompared '
+            header1 = '\t\t\t{compared vs.}'
             for cF in consFunctionsPivot:
-                header1 += ' & \\multicolumn{2}{|c}{'+rename_algorithms(cF)+'}'
-            header1 += '\\\\ \n'
-            header2 = '\t\t\tvs. '+'& GENE & REAL '*nPivots + '\\\\ \\hline\n'
+                header1 += ' & \\multicolumn{2}{c}{'+rename_algorithms(cF)+'}'
+            header1 += '\\\\ \n\t\t\t\cmidrule(lr){2-3}\n\t\t\t\cmidrule(lr){4-5}\n\t\t\t\cmidrule(lr){6-7}\n'
+            header2 = '\t\t\t '+'& \multicolumn{1}{c}{GENE} & \multicolumn{1}{c}{REAL} '*nPivots + '\\\\ \\midrule\n'
             fileTable.write(header1)
             fileTable.write(header2)
 
@@ -239,9 +239,8 @@ def generateTables():
                 # Write to file
                 fileTable.write('\t\t\t'+table[line_count])
                 line_count += 1
-            fileTable.write('\t\t\t\\hline\n')
+            fileTable.write('\t\t\t\\bottomrule\n')
             fileTable.write('\t\t\\end{tabular*}\n')
-            fileTable.write('\t\\end{center}\n')
             fileTable.write('\\end{table}\n')
             fileTable.close()
 

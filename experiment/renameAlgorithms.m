@@ -6,14 +6,60 @@ if (iscell(algorithms) && numel(algorithms) == 1) || ischar(algorithms)
     algorithms = {algorithms};
 end
 
-str = {'SpecLS', 'STREHL-CSPA', 'STREHL-MCLA', 'STREHL-HGPA','EAC-SL','EAC_W','PAC-SL','WEA-SL','LCE-CTS-SL','DICLENS','STREHL_CSPA_W','DICLENS_W','JWEAC_SL','PWEAC_SL','STREHL_CSPA_W_none','STREHL_CSPA_W_red','DICLENS_W_none','DICLENS_W_red','PWEAC_SL_none','PWEAC_SL_red', 'minmax', 'prob', 'rank10', 'wMean2', 'wMin2', 'wVegaPons2CLK', 'wVegaPons2CBK', 'wRankAggreg2RRA','ProbPCA','SPEC','NONE'};
-rep = {'Sp','CSPA', 'MCLA', 'HGPA','EAC','EAC-W','PAC','WEA','LCE','DICLENS','CSPA-W','DICLENS-W','JWEAC','EAC-W','CSPA-Wn','CSPA-Wr','DICLENS-Wn','DICLENS-Wr','EAC-Wn','EAC-Wr','max', 'sum', 'rank', 'mean', 'min', 'CLK', 'CBK', 'RRA','PPCA','SFS','none'};
+dict = {
+    'SpecLS', 'Sp'
+    'STREHL-CSPA', 'CSPA'
+    'STREHL-MCLA', 'MCLA'
+    'STREHL-HGPA', 'HGPA'
+    'STREHL_CSPA_W', 'CSPA-W'
+    'STREHL-CSPA-W', 'CSPA-W'
+    'STREHL-CSPA-Wn', 'CSPA-W'
+    'STREHL_CSPA_W_none', 'CSPA-W'
+    'STREHL-CSPA-Wr', 'CSPA-Wr'
+    'STREHL_CSPA_W_red', 'CSPA-Wr'
+    'STREHL_MCLA_W', 'MCLA-W'
+    'STREHL-MCLA-W', 'MCLA-W'
+    'STREHL_MCLA_W_none', 'MCLA-W'
+    'STREHL_MCLA_W_red', 'MCLA-Wr'
+    'STREHL_HGPA_W', 'HGPA-W'
+    'STREHL-HGPA-W', 'HGPA-W'
+    'STREHL_HGPA_W_none', 'HGPA-W'
+    'STREHL_HGPA_W_red', 'HGPA-Wr'
+    'EAC-SL', 'EAC'
+    'EAC_W', 'EAC-W'
+    'EAC-SL-Wn', 'EAC-W'
+    'EAC-SL-Wr', 'EAC-Wr'
+    'PWEAC_SL', 'EAC-W'
+    'PWEAC_SL_none', 'EAC-Wn'
+    'PWEAC_SL_red', 'EAC-Wr'
+    'JWEAC_SL', 'JWEAC'
+    'JWEAC-SL', 'JWEAC'
+    'PAC-SL', 'PAC'
+    'WEA-SL', 'WEA'
+    'LCE-CTS-SL', 'LCE'
+    'DICLENS', 'DICLENS'
+    'DICLENS_W', 'DICLENS-W'
+    'DICLENS-Wn', 'DICLENS-W'
+    'DICLENS-Wr', 'DICLENS-Wr'
+    'DICLENS_W_none', 'DICLENS-Wn'
+    'DICLENS_W_red', 'DICLENS-Wr'
+    'minmax', 'max'
+    'prob', 'sum'
+    'rank10', 'rank'
+    'wMean2', 'mean'
+    'wMin2', 'min'
+    'wVegaPons2CLK', 'CLK'
+    'wVegaPons2CBK', 'CBK'
+    'wRankAggreg2RRA', 'RRA'
+    'ProbPCA', 'PPCA'
+    'SPEC', 'SFS'
+    'NONE', 'none'};
 
 
 for i = 1:numel(algorithms)
-    ind = strcmpi(algorithms{i},str);
+    ind = strcmpi(algorithms{i},dict(:,1));
     if sum(ind) == 1
-        algorithms{i} = rep{ind};
+        algorithms{i} = dict{ind,2};
     end
 end
 

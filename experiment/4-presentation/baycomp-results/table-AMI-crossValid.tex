@@ -1,11 +1,14 @@
 \begin{table}
-	\begin{center}
-		\caption{Probabilities that proposed methods with PRAr are better than others considering the \emph{crossValid} protocol.}
+	\centering
+		\caption{Probabilities that proposed methods with PRAr are better than others considering the \emph{crossValid} protocol. Probabilities larger than 0.5 (an arbitrary threshold) are given in bold for convenience.}
 		\label{tab:bayescomp:crossValid}
-		\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}} l |c c |c c |c c }
-			\hline
-			compared  & \multicolumn{2}{|c}{EAC-Wr} & \multicolumn{2}{|c}{CSPA-Wr} & \multicolumn{2}{|c}{DICLENS-Wr}\\ 
-			vs. & GENE & REAL & GENE & REAL & GENE & REAL \\ \hline
+		\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}} l c c c c c c }
+			\toprule
+			{compared vs.} & \multicolumn{2}{c}{EAC-Wr} & \multicolumn{2}{c}{CSPA-Wr} & \multicolumn{2}{c}{DICLENS-Wr}\\ 
+			\cmidrule(lr){2-3}
+			\cmidrule(lr){4-5}
+			\cmidrule(lr){6-7}
+			 & \multicolumn{1}{c}{GENE} & \multicolumn{1}{c}{REAL} & \multicolumn{1}{c}{GENE} & \multicolumn{1}{c}{REAL} & \multicolumn{1}{c}{GENE} & \multicolumn{1}{c}{REAL} \\ \midrule
 			EAC-Wr& \textbf{-} & \textbf{-}  & \textbf{0.643} & \textbf{1.000} & \textbf{0.920} & \textbf{1.000}\\
 			CSPA-Wr & 0.357 & 0.000& \textbf{-} & \textbf{-}  & \textbf{0.569} & 0.001\\
 			DICLENS-Wr & 0.080 & 0.000 & 0.431 & \textbf{0.999}& \textbf{-} & \textbf{-} \\
@@ -21,7 +24,6 @@
 			MCLA & 0.217 & 0.000 & 0.234 & \textbf{0.912} & 0.324 & 0.005\\
 			PAC & \textbf{0.876} & \textbf{0.880} & \textbf{0.870} & \textbf{1.000} & \textbf{0.997} & \textbf{1.000}\\
 			WEA & \textbf{0.983} & \textbf{0.952} & \textbf{0.922} & \textbf{1.000} & \textbf{0.999} & \textbf{1.000}\\
-			\hline
+			\bottomrule
 		\end{tabular*}
-	\end{center}
 \end{table}

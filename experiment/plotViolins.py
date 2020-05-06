@@ -8,7 +8,7 @@ import seaborn as sns
 from data import *
 
 __author__ = "Nejc Ilc"
-__copyright__ = "Copyright 2019, Nejc Ilc"
+__copyright__ = "Copyright 2020, Nejc Ilc"
 __license__ = "GPL"
 __version__ = "0.9"
 __email__ = "nejc.ilc@gmail.com"
@@ -36,7 +36,7 @@ dpi = 300
 figsize = (7.16, 3.5)
 SAVE_FIG = 1
 
-scoresFolder = '4-presentation/export-baycomp'
+scoresFolder = '4-presentation/baycomp-import'
 outputFolder = '4-presentation/violin-plots'
 
 datasetCollectionList = ['GENE', 'REAL']

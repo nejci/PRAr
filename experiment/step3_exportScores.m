@@ -5,7 +5,7 @@ function step3_exportScores()
 
 fprintf('Exporting scores to CSV for baycomp ... ');
 
-saveFolder = 'export-baycomp';
+saveFolder = 'baycomp-import';
 savePrefix = 'scores';
 
 
@@ -54,7 +54,7 @@ for dataColl_i = 1:datasetCollections_num
         for scenario_i = 1:scenarios_num
             scenario = scenarios{scenario_i};
                                
-            scores = SCORES.(datasetCollection).(eCVI).(scenario);            
+            scores = SCORES.(datasetCollection).(eCVI).(scenario).mean;            
             fileOutSuffix = ['-',datasetCollection,'-',eCVI,'-',scenario];
                         
             % Print to file

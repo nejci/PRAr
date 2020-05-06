@@ -5,7 +5,7 @@
 % The experiment
 % -------------------------------------------------------------------------
 % Writen by Nejc Ilc (nejc.ilc@fri.uni-lj.si)
-% 2020-04-04
+% 2020-05-01
 % =========================================================================
 
 % Results are already computed and stored in the following folders:
@@ -44,3 +44,6 @@ step5_runPyBayesAnalysis();
 
 % 6. Display heatmap of scores for each PRAr configuration.
 step6_PRAr_heatmaps();
+
+% 7. Create Latex tables with AMI scores for each dataset
+step7_createTables();
