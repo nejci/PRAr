@@ -9,7 +9,7 @@ This repository contains supporting material for the paper
 - [MATLAB](https://www.mathworks.com/products/matlab.html)
 - [Python3](https://www.python.org/downloads/)
 
-Code was tested with *MATLAB R2019a* and *Python 3.7.4* on *Windows 10*. 
+Code was tested with *MATLAB R2019b* and *Python 3.8.2* on *Windows 10*. 
 Please, give us feedback if you experience any troubles on other configurations.
 
 ## Installation
