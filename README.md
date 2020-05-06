@@ -2,7 +2,7 @@
 _Partition Relevance Analysis with the reduction step_
 
 This repository contains supporting material for the paper 
-*Weighted Cluster Ensemble Based on Partition Relevance Analysis With Reduction Step*, Nejc Ilc (to be published).
+*Weighted Cluster Ensemble Based on Partition Relevance Analysis With Reduction Step* (work in progress).
 
 ## Requirements
 
@@ -33,6 +33,6 @@ It provides functions for:
 - cluster internal and external validation,
 - visualization of clustering results.
 
-Pepelka includes a lot of artificial and real datasets. 
+Pepelka includes a lot of artificial and real-world datasets. 
 
 A pre-release of Pepelka is included here.
