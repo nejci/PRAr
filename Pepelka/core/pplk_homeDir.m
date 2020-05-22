@@ -3,7 +3,7 @@ function pplkPath = pplk_homeDir(subFolder)
 % Default subFolder is core.
 
 %%%FIELD-PATH%%%
-pplkPath = 'D:\Nejc\LASPP\mojeDelo\clanki\PRAr\code\Pepelka';
+pplkPath = '';
 %%%FIELD-PATH%%%
 
 if ~exist('subFolder','var') || isempty(subFolder)
